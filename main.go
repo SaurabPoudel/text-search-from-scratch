@@ -10,8 +10,8 @@ import (
 
 func main() {
 	var dumpPath, query string
-	flag.StringVar(&dumpPath, "p", "./enwiki-latest-abstract1.xml.gz", "wiki abstract dump path")
-	flag.StringVar(&query, "q", "Small wild cat")
+	flag.StringVar(&dumpPath, "p", "enwiki-latest-abstract1.xml.gz", "wiki abstract dump path")
+	flag.StringVar(&query, "q", "Nepal", "search query")
 	flag.Parse()
 
 	log.Println("Full text search is in progress")

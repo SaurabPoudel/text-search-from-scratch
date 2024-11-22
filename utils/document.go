@@ -28,7 +28,7 @@ func LoadDocuments(path string) ([]document, error) {
 	dump := struct {
 		Documents []document `xml:"doc"`
 	}{}
-	if err : dec.Decode(&dump); err != nil{
+	if err := dec.Decode(&dump); err != nil {
 		return nil, err
 	}
 
